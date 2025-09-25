@@ -117,3 +117,89 @@ public class DigitalLibraryCatalog {
     }
 }
 ```
+
+---
+
+# 📚 DigitalLibraryCatalog – Java TreeMap & HashMap Demonstration
+
+This Java program simulates a **Digital Library Catalog System** using the **`TreeMap`** class. It demonstrates how books (with randomly generated IDs) can be stored, retrieved, updated, and removed in a catalog. The program also compares **`TreeMap`** with **`HashMap`**, showcasing their differences in ordering and performance, while using common **Map interface methods**.
+
+---
+
+## 🚀 Features Demonstrated
+
+### 1. **Adding Books (TreeMap)**
+- Inserts at least 6 books with **random IDs**.  
+- `TreeMap` automatically sorts entries by **ascending order of keys** (book IDs).  
+- Demonstrates the use of the **`var` keyword** for concise variable declarations.  
+
+---
+
+### 2. **Accessing Books**
+- Retrieves a book title by its ID using `get(key)`.  
+- Uses `firstKey()` and `lastKey()` to access boundary elements in the catalog.  
+
+---
+
+### 3. **Catalog Size**
+- Displays the total number of books using `size()`.  
+
+---
+
+### 4. **Iterating Through the Catalog**
+- Iterates over:
+  - **Keys** (`keySet()`) → Book IDs.  
+  - **Values** (`values()`) → Book Titles.  
+  - **Entries** (`entrySet()`) → ID–Title pairs.  
+- Demonstrates that iteration order in `TreeMap` is always **sorted by keys**.  
+
+---
+
+### 5. **TreeMap vs HashMap**
+- **TreeMap** → Sorted by keys, useful when ordering matters.  
+- **HashMap** → Unordered, faster for simple key–value storage.  
+
+**Example Output:**  
+```
+TreeMap (sorted): {101=Book Title A, 205=Book Title B, 450=Book Title C}
+HashMap (unsorted): {205=Book Title B, 101=Book Title A, 450=Book Title C}
+```
+
+---
+
+### 6. **Common Map Methods**
+- `containsKey()` → Check if a book ID exists.  
+- `containsValue()` → Check if a book title exists.  
+- `replace()` → Update a book’s title.  
+
+---
+
+### 7. **Removing Books**
+- `remove(key)` → Removes a specific book by ID.  
+- `clear()` → Removes all books from the catalog.  
+
+---
+
+## 📊 Summary Table
+
+| Feature            | TreeMap                          | HashMap                     |
+|--------------------|----------------------------------|-----------------------------|
+| **Ordering**       | Sorted by keys (ascending)       | No guaranteed order         |
+| **Null Keys**      | ❌ Not allowed                   | ✅ One null key allowed      |
+| **Performance**    | O(log n) for operations          | O(1) average for operations |
+| **Use Case**       | When sorted order is required    | When speed is more important|
+
+---
+
+## 🎯 Learning Outcomes
+- Understand how to use **TreeMap** for sorted key–value storage.  
+- Compare **TreeMap vs HashMap** in terms of ordering and performance.  
+- Practice **CRUD operations** (Create, Read, Update, Delete) on a catalog system.  
+- Learn how to use **Map interface methods** (`containsKey`, `containsValue`, `replace`, `remove`, `clear`).  
+- See how the **`var` keyword** simplifies variable declarations in Java 10+.  
+
+---
+
+👉 This program is ideal for students and beginners exploring the **Java Collections Framework**, especially when learning about **Maps** and their real-world applications like digital catalogs, directories, and inventory systems.  
+
+---
